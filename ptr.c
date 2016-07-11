@@ -9,8 +9,7 @@ int main(){
     ptr = &a;
 //    printf("%d",10);
 //    printf("%d",a);
-    printf("%d", *ptr);
-    printf("\n");
-    printf("%d", ptr);
+    printf("%d\n", *ptr);
+    printf("%p\n", ptr);
 
 }
