@@ -4,7 +4,9 @@ int main()
 {
     int array[10] = {0,1,2,3,4,5,6,7,8,9};
     int array10[10] = {0};
-    int size, count;
+    int size, count, a;
+    a = array[10];
+    printf("a: %d\n", a);
     char hello[] = {'H', 'e', 'l', 'l', 'o'};
     char hello1[] = "Hello";
     size = sizeof(hello);
