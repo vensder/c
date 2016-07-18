@@ -8,8 +8,8 @@ int main(){
     size = sizeof(ptr);
     printf("%d\n", size);
     ptr = &a;
-//    printf("%d",10);
-//    printf("%d",a);
+    size = sizeof(ptr);
+    printf("%d\n", size);
     printf("%d\n", *ptr);
     printf("%p\n", ptr);
 
