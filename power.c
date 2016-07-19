@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <math.h>
 
+// print 2 ^ x for arg = x (or fo 10 without args)
+// gcc power.c -o power -lm
+
 int main(int argc, char *argv[])
 {
     int i, width;
@@ -16,11 +19,9 @@ int main(int argc, char *argv[])
 
     printf("max: %.0lf, width: %d\n", max, width);
 
-
     for (i=1; i <= upper; i++){
         printf("2 ^ %2d: %*.0lf\n", i, width, pow(2, i));
     }
-
 
     return(0);
 }
