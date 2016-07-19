@@ -1,11 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char *argv[]){
-    int i;
+int main(int argc, char *argv[])
+{
+    int i, width;
+    int upper = 10;
+    double max;
 
-    for (i=1; i <=10; i++){
-        printf("%2d power of 2: %4f", i, pow(2, i));
+    if (argc > 1)
+        upper = atoi(argv[1]);
+    
+    max = pow(2,upper);
+    width = (int)(floor(log10(max)) + 1.0);
+
+    printf("max: %.0lf, width: %d\n", max, width);
+
+
+    for (i=1; i <= upper; i++){
+        printf("2 ^ %2d: %*.0lf\n", i, width, pow(2, i));
     }
 
 

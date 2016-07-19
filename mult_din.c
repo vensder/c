@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//multiplication table
+
 int main(int argc, char *argv[])
 {
     int i,j;
-    int upper = 9;
+    int upper = 9; //default size of table
 
     if (argc > 1){
         upper = atoi(argv[1]);
