@@ -34,7 +34,7 @@ int main(){
     printf("5/2 as %%f is %f\n", 5/2);
     printf("5.0/2.0 as %%d is %d\n", 5.0/2.0);
 
-
+    int a = 1; long b = 3; float f = 5.0, double d = 4.00000004;
 
     return(0);
 }
