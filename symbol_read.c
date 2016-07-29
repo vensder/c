@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int c;
+    int a,b,c,d;
 
     printf("I'm waiting for a symbol: ");
     c = getchar();
@@ -13,6 +13,14 @@ int main(){
     printf("Let's again: \n");
     c = getc(stdin);
     printf("I'v got the symbol: '%c'.\n", c);
+
+    printf("I'm waiting for a three symbols - 'a', 'b' and 'c':\n");
+
+    a = getchar();
+    b = getchar();
+    d = getchar();
+
+    printf("Three symbols: %c, %c, %c \n", a, b, d);
 
     return(0);
 }
