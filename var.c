@@ -2,6 +2,9 @@
 
 int main(){
 
+    int i3;
+//    char i3;
+
     _Bool t = 1;
     _Bool f = 0;
     int x = 42;
@@ -22,6 +25,10 @@ int main(){
     printf("char c as int = %d\n", c);
     printf("sizeof c is %d\n", sizeof(c));
     printf("char c105 = %c.\n", c105);
+    
+    int digit = 1;
+    printf("\nchar from digit %d is %c\n\n", digit, digit);
+
 
 
     printf("char newline = %c\n", newline);
@@ -34,7 +41,12 @@ int main(){
     printf("5/2 as %%f is %f\n", 5/2);
     printf("5.0/2.0 as %%d is %d\n", 5.0/2.0);
 
-    int a = 1; long b = 3; float f = 5.0, double d = 4.00000004;
+    int i1 = 1; long l1 = 3; float f1 = 5.01; double d1 = 4.00000004;
+
+    printf("%d\n%d\n%f\n%f\n", i1, l1, f1, d1);
+
+    unsigned int k1 = -10;
+    printf("k1 is %u\n", k1);
 
     return(0);
 }
