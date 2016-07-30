@@ -22,5 +22,8 @@ int main(){
 
     printf("Three symbols: %c, %c, %c \n", a, b, d);
 
+    printf("Press the Enter for quit: ");
+    getchar();
+
     return(0);
 }
