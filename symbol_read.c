@@ -22,7 +22,7 @@ int main(){
 
     printf("Three symbols: %c, %c, %c \n", a, b, d);
 
-    printf("Press the Enter for quit: ");
+    printf("Press the Enter for quit: \n");
     getchar();
 
     return(0);
