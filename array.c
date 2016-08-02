@@ -22,4 +22,16 @@ int main()
     int array0[0];
     size = sizeof(array0);
     printf("%d\n", size);
+
+    char name[] = "Charly";
+    printf("Sizeof name = %lu \n", sizeof(name));
+    char *p;
+    int i;
+    for (i=0; i < sizeof(name); i++){
+        p = &name[i];
+        printf("*p = %c(%d) \n", *p, i);
+    }
+
+
+
 }
