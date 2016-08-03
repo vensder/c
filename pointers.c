@@ -35,6 +35,18 @@ int main(){
     parray[0]++; parray[1]--;
     printf("%d, %d \n", *parray[0], *parray[1]);
 
+    char name[] = "abcde";
+    //int name[] = {1,2,3,4,5};
+    printf("%d, %p \n", name, name);
+    int array_size = sizeof(name);
+    int elem_size = sizeof(name[0]);
+    int elem_num = array_size/elem_size;
+    printf("size of array: %d\n", array_size);
+    printf("size of element: %d\n", elem_size);
+    printf("Number of elements: %d\n", elem_num);
+
+    for (int i = 0; i < array_size-1; i++)
+        printf("%d\n", *(name + i));
 
 
     printf("linux = %d \n", linux);
