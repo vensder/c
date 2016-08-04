@@ -1,7 +1,20 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main()
-{
+{   
+    printf("%u\n", UINT_MAX);
+
+    unsigned i,j;
+    for (i=0; i < UINT_MAX; i++)
+      for (j=0; j < UINT_MAX; j++){
+        putchar('.');
+        putchar('-');
+        putchar('=');
+        putchar('+');
+    	fflush(stdout);
+      }
+
     int cc;
 
     printf("%f\n", 6/55.0);
