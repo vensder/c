@@ -24,6 +24,10 @@ int main(){
 
     printf("%d\n", 3/4);
     printf("%d\n", 7/2);
+    printf("%d\n", 7%2);
+
+    int x = 3; int y;
+    printf("x = %d, y = %d \n", x, y = ++x);
 
     return 0;
 }
