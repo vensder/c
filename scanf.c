@@ -5,10 +5,17 @@ int main(){
     char buffer[20];
     float f;
 
+    printf("what is your name?\n");
+    fgets(buffer, 20, stdin);
+    fflush(stdout);
+    printf("Hi, %s\n", buffer);
+    fflush(stdout);
+
     printf("Input anything: \n");
-    puts("Hello\n");
+//    puts("Hello\n");
+
     scanf("%s", buffer);
-    puts("Hello2\n");
+//    puts("Hello2\n");
     printf("%s \n", buffer);
 
     printf("Input float: \n");
