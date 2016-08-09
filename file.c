@@ -4,6 +4,7 @@
 int main(int argc, char *argv[])
 {
     FILE *file;
+
     file = fopen("myfile.txt", "a");
     printf("%lu \n", sizeof(file));
 
@@ -13,7 +14,9 @@ int main(int argc, char *argv[])
     }
     
     fprintf(file, "Hello from app to file!\n");
+
     fclose(file);
+
     getchar();
     return 0;
 }
