@@ -35,9 +35,12 @@ int main(int argc, char *argv[]){
         sleep(1);
         if (max_duration_sec && current_duration_sec >= max_duration_sec){
             printf("\nDone!\n");
-//            exit(0); // uncomment for testing: time ./timer 50;
-            if ((argc > 2) && (strcmp(argv[2],"--beep") == 0)) beep();
-            system("pwd");
+            //exit(0); // uncomment for testing: time ./timer 50;
+
+            if (argc > 2) {
+                    if (strcmp(argv[2],"--beep") == 0) beep();
+                    else if (strcmp(argv[2],"--popup") == 0) system("zenity --info --text=\"It's time!\"");
+            }
             
             break;
         }
