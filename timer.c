@@ -37,6 +37,7 @@ int main(int argc, char *argv[]){
             printf("\nDone!\n");
 //            exit(0); // uncomment for testing: time ./timer 50;
             if ((argc > 2) && (strcmp(argv[2],"--beep") == 0)) beep();
+            system("pwd");
             
             break;
         }
