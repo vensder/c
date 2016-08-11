@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 
 int max_duration_sec  = 0;
 
@@ -35,7 +36,8 @@ int main(int argc, char *argv[]){
         if (max_duration_sec && current_duration_sec >= max_duration_sec){
             printf("\nDone!\n");
 //            exit(0); // uncomment for testing: time ./timer 50;
-            beep();
+            if ((argc > 2) && (strcmp(argv[2],"--beep") == 0)) beep();
+            
             break;
         }
     }
