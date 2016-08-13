@@ -22,6 +22,11 @@ void beep(){
 
 int main(int argc, char *argv[]){
 
+    if ((argc > 1) && !(strcmp(argv[1],"--help"))){
+        printf("Help\n");
+        exit(0);
+    }
+
     if (argc > 1){
         max_duration_sec = atoi(argv[1]);
         printf("max_duration_sec: %d\n", max_duration_sec);
@@ -38,8 +43,8 @@ int main(int argc, char *argv[]){
             //exit(0); // uncomment for testing: time ./timer 50;
 
             if (argc > 2) {
-                    if (strcmp(argv[2],"--beep") == 0) beep();
-                    else if (strcmp(argv[2],"--popup") == 0) system("zenity --info --text=\"It's time!\"");
+                    if (!strcmp(argv[2],"--beep")) beep();
+                    else if (!strcmp(argv[2],"--popup")) system("zenity --info --text=\"It's time!\"");
             }
             
             break;
