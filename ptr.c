@@ -6,11 +6,11 @@ int main(){
 
     int *ptr = NULL;
     size = sizeof(ptr);
-    printf("%d\n", size);
+    printf("Size of pointer before assigning: %d\n", size);
     ptr = &a;
     size = sizeof(ptr);
-    printf("%d\n", size);
-    printf("%d\n", *ptr);
-    printf("%p\n", ptr);
+    printf("Size of pointer after dereferensing: %d\n", size);
+    printf("Value of pointer: %d\n", *ptr);
+    printf("Address of pointer: %p\n", ptr);
 
 }
