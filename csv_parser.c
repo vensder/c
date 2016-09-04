@@ -23,8 +23,14 @@ int main()
     while (fgets(line, 1024, stream))
     {
         char* tmp = strdup(line);
-        printf("Field 3 would be %s\n", getfield(tmp, 3));
+        printf("%s", getfield(tmp, 1));
+	    free(tmp);
+	    getchar();
+	    tmp = strdup(line);
+        printf("%s", getfield(tmp, 2));
+	    printf("\n-----------");
         // NOTE strtok clobbers tmp
         free(tmp);
+	    getchar();
     }
 }
